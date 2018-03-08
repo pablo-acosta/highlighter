@@ -1,0 +1,10 @@
+<div class="text-viewer-container">
+    <div class="text-viewer-header noselect ">
+        <div class="control-panel-container">
+            <div class="article-title">{{article.title}}</div>
+            <div class="button-clear glyphicon glyphicon glyphicon-trash" (click)="removeAll()"></div>
+        </div>
+    </div>
+    <div class="text-viewer-body" [innerHTML]="article.text" (contextmenu)="addHighlight()">
+    </div>
+</div>

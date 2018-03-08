@@ -1,0 +1,12 @@
+<div class="highlight-viewer-container noselect">
+    <div class="highlighted-section-header">
+        ({{highlights.length}}) Highlighted Sections
+    </div>
+    <div class="highlighted-section" *ngFor="let hl of highlights" [hidden]="!hl.highlightedText"
+        (mouseenter)="selectHighlight(hl)"
+        (mouseleave)="selectHighlight(undefined)">
+            <div class="highlighted-section-delete glyphicon glyphicon-remove" 
+                 (click)="removeHighlight(hl)"></div>
+            <div class="highlighted-section-text">{{hl.highlightedText}}</div>
+    </div>
+</div>

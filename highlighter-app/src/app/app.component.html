@@ -1,0 +1,32 @@
+<div class="main-container">
+    <top-panel [appTitle]="appTitle" 
+               (onHelpButtonClick)="toogleHelpPageView()"
+               (onDownloadButtonClick)="toogleDownloadPanelView()"></top-panel>
+    
+    <div class="download-panel" *ngIf="showDownloadForm">
+        <form #downloadForm="ngForm" (ngSubmit)="onSubmit()">
+            <label for="code">Code</label>
+            <input type="text" class="form-control" id="code" required [(ngModel)]="model.code" name="code" #name="ngModel">
+            <div [hidden]="!errorMessage" class="alert alert-danger">{{errorMessage}}</div>
+            <button type="button" class="btn btn-danger" (click)="toogleDownloadPanelView()">Cancel</button>
+            <button type="submit" class="btn btn-success" [disabled]="!downloadForm.form.valid">Download</button>
+        </form>
+    </div>
+
+
+    <text-viewer [hidden]="showHelpPage" [article]="article" 
+                 [highlights]="highlights"
+                 [selectedHighlight]="selectedHighlight"
+                 (onRemoveAll)="removeAll()">
+    </text-viewer>
+
+    <highlight-viewer [hidden]="showHelpPage" [highlights]="highlights" 
+                      (onSelectedHighlight)="onSelectedHighlight($event)"
+                      (onRemoveHighlight)="onRemoveHighlight($event)">
+    </highlight-viewer>
+
+    <help-page [hidden]="!showHelpPage" (onHelpClose)="toogleHelpPageView()"></help-page>
+
+    <bottom-panel [author]="author"></bottom-panel>
+    
+</div>

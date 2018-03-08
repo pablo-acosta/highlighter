@@ -1,0 +1,50 @@
+.highlight-viewer-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    background-color: #F3F3F3;
+    border: solid 3px lightgray;
+    overflow: auto;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.highlighted-section {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 20px;
+
+    background-color: #FFFFE9;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: solid 1px lightgray;
+}
+
+.highlighted-section-delete {
+    width: 25px;
+    height: 25px;
+    float: right;
+    color: red;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 4px;
+    cursor: pointer;
+}
+
+.highlighted-section-text {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(100% - 25px);
+    height: auto;
+    font-size: medium;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.highlighted-section-header{
+    text-align: center;
+    font-weight: bold;
+}
+

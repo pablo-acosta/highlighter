@@ -1,0 +1,61 @@
+.top-panel-container{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #007ACC;
+}
+
+.app-title {
+    display: inline-block;
+    padding-left: 15px;
+    padding-top: 3px;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.panel-button {
+    float: right;
+    padding-top: 5px;
+    margin-left: 5px;
+    margin-right: 15px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button-download {
+    cursor: pointer;
+}
+
+.download-panel {
+    display: block;
+    width: 250px;
+    height: auto;
+    float: right;
+    border-bottom-left-radius: 10px;
+    background-color: grey;
+    text-align: center;
+    z-index: 10;
+    
+    padding: 5px;
+    color: white;
+
+    label {
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    input {
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+

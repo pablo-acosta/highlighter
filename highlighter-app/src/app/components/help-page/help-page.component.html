@@ -1,0 +1,9 @@
+<div class="help-container">
+    <div class="help-header">
+        Help
+        <div class="buttonClose glyphicon glyphicon-remove-circle" (click)="close()"></div>
+    </div>
+    <div class="help-body">
+        <help-entry *ngFor="let he of helpEntries" [helpEntry]="he"></help-entry>
+    </div>
+</div>

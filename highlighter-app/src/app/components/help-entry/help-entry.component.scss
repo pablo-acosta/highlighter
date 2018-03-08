@@ -1,0 +1,28 @@
+.help-entry-container {
+    padding: 20px;
+
+    .help-entry-icon {   
+        display: inline-block;
+        vertical-align: top;
+        width: 60px;
+        height: 60px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .help-entry-body {   
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 70px);
+        height: auto;
+        color: grey;
+    }
+
+    .help-entry-title {
+        font-weight: bold;
+    }
+
+    .help-entry-text {
+        height: auto;
+    }
+}

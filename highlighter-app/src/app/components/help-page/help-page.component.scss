@@ -1,0 +1,33 @@
+.help-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: solid 3px lightgrey;
+    border-radius: 10px;
+    background-color: #FFFCE0;
+}
+
+.help-header {
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-weight: bold;
+    font-size: 27px;
+    padding: 10px;
+    color: grey;
+}
+
+.help-body {
+    display: block;
+    width: 100%;
+    height: calc(100% - 30px);
+    padding: 20px;
+}
+
+.buttonClose {
+    float: right;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+
